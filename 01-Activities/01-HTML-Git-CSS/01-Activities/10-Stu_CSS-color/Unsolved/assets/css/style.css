@@ -15,10 +15,25 @@ background-color: black;
 
 #section-1 {
   color: yellow;
+  background-color: purple;
+}
+
+#section-2 {
+  color: orangered;
   background-color: blue;
 }
 
+#section-3 {
+  color: orange;
+  background-color: blue;
+}
+
+#section-4 {
+  color: white;
+  background-color: brown;
+}
+
 #section-6 {
-  color: red;
-  background-color: cornsilk;
+  color: yellow;
+  background-color: blue;
 }
