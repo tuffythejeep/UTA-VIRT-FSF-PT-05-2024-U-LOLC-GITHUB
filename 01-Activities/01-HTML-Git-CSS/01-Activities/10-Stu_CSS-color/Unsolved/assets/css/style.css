@@ -4,17 +4,21 @@
   }
   
 .section-blue {
-
+  color: white;
+  background-color: blue;
 }
   
 .container {
-
+  color: chartreuse;
+background-color: black;
 }
 
 #section-1 {
-
+  color: yellow;
+  background-color: blue;
 }
 
 #section-6 {
-
+  color: red;
+  background-color: cornsilk;
 }
