@@ -39,6 +39,9 @@ header {
   .card {
     width: 50%;
   }
+  header {
+    background-color: grey;
+  }
 }
 /* TODO: Use media query to change the width of the cards so they are stacked on top of each other at 768px or smaller */
 
@@ -46,4 +49,6 @@ header {
   .card {
     width: 100%;
   }
+  header {
+    background-color: greenyellow;}
 }
