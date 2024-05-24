@@ -1,10 +1,12 @@
 // TODO: Declare variable 'shout' with the value 'Shout' so it's available to `justShout` and `shoutItAllOut` functions
 function justShout() {
+  const shout = "Shout"
   console.log(`${shout}, ${shout}`);
   return;
 }
 
 function shoutItAllOut() {
+  const shout = "Shout"
   console.log(`${shout} it all out! `);
   return;
 }
@@ -20,6 +22,7 @@ function sayLions() {
 }
 
 function sayTigers() {
+  const animal = "Tigers";
   console.log(`and ${animal} and `);
   return;
 }
@@ -28,7 +31,7 @@ function sayTigers() {
 const bears = "Bears";
 
 function sayBears() {
-    const bears = "Pandas";
+    const bears = "Bears";
     console.log(`${bears}! OH  MY!`);
     return;
 }
