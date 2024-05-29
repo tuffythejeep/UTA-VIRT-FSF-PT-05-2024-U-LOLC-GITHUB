@@ -1,3 +1,7 @@
+const someE1 = document.getElementById('someId')
+
+const someOtherE1 = document.querySelector('#someId>div')
+
 // Access multiple elements using .querySelectorAll()
 const divTags = document.querySelectorAll('div');
 const pTags = document.querySelectorAll('p');
