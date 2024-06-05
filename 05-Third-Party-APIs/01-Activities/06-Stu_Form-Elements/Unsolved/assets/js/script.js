@@ -12,6 +12,8 @@ item.text(shoppingInput.val());
 
 shoppingListEl.append(item);
 
+$('input[type="text"]').val("");
+
 }
 
 // TODO: Add an event listener to the `shoppingFormEl` to handle submission
