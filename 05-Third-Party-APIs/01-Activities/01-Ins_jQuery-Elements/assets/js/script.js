@@ -1,4 +1,5 @@
 // Comments show the vanilla JavaScript equivalent statements
+const rootEl1 = document.querySelector("#root");
 
 // const rootEl = document.getElementById("root");
 const rootEl = $('#root');
