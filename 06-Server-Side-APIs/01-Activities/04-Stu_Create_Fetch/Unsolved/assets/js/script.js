@@ -5,7 +5,7 @@ const fetchButton = document.getElementById('fetch-button');
 
 function getApi() {
   // Insert the API url to get a list of your repos
-  const requestUrl = "https://api.github.com/users/bldambtn/repos";
+  const requestUrl = "https://api.github.com/users/tuffythejeep/repos";
 
   fetch(requestUrl)
     .then(function (response) {
