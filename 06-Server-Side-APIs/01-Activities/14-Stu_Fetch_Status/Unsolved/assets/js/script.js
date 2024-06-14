@@ -7,6 +7,10 @@ function getApi(requestUrl) {
       // Check the console first to see the response.status
       console.log(response.status);
       // Then write the conditional based on that response.status value
+    if(response.status !== 200){
+      responseText.textContent = response.status;
+      }
+      return response.json ();
       // Make sure to display the response on the page
     })
     .then(function (data) {
