@@ -1,5 +1,5 @@
 {
-  "name": "21-ins_colors",
+  "name": "unsolved",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.4.0"
+    "inquirer": "^8.2.4"
   },
   "devDependencies": {},
   "description": ""
