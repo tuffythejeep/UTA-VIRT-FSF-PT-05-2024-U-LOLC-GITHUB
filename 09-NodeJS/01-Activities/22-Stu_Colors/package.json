@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "colors": "^1.4.0",
+    "fund": "^1.0.0",
+    "inquirer": "^10.0.1"
+  }
+}
