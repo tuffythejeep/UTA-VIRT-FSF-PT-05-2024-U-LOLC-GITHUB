@@ -1,6 +1,5 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-
 inquirer
   .prompt([
     {
@@ -32,8 +31,37 @@ inquirer
       type: "text",
       message: "Enter your LinkedIn URL:",
       name: "linkedinInput",
-    }
+    },
   ])
   .then((response) => {
-fs.writeFile("index.html")
-};
+    const {
+      nameInput,
+      locationInput,
+      hobbyInput,
+      foodInput,
+      githubInput,
+      linkedinInput,
+    } = response;
+    const htmlContent = `
+      <html>
+        <head>
+          <title>Portfolio</title>
+        </head>
+        <body>
+          <h1>${nameInput}'s Portfolio</h1>
+          <p>Location: ${locationInput}</p>
+          <p>Hobby: ${hobbyInput}</p>
+          <p>Favorite Food: ${foodInput}</p>
+          <p>GitHub: <a href="https://github.com/${githubInput}">${githubInput}</a></p>
+          <p>LinkedIn: <a href="${linkedinInput}">${linkedinInput}</a></p>
+        </body>
+      </html>
+    `;
+    fs.writeFile("portfolio.html", htmlContent, (error) => {
+      if (error) {
+        console.error("Error writing file:", error);
+      } else {
+        console.log("Portfolio generated successfully!");
+      }
+    });
+  });
