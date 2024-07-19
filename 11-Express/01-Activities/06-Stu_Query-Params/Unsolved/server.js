@@ -16,6 +16,7 @@ app.get('/api/terms/', (req, res) => {
   // TODO: Add a comment describing the req.query object
 
   const hasQuery = Object.keys(req.query).length > 0;
+  
 
   if (hasQuery && req.query.sort === 'dsc') {
     return res.json(sortHelper('dsc'));
