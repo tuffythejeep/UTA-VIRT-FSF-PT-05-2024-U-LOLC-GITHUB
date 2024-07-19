@@ -11,12 +11,14 @@ const sortHelper = (type) =>
   termData.sort(sortData('term', 'relevance', `${type}`));
 
 // TODO: Add a comment describing the functionality of this route
+// Gets all terms and is able to sort them in descending and ascending order.
 
 app.get('/api/terms/', (req, res) => {
   // TODO: Add a comment describing the req.query object
 
   const hasQuery = Object.keys(req.query).length > 0;
-  
+
+  console.log(`req');
 
   if (hasQuery && req.query.sort === 'dsc') {
     return res.json(sortHelper('dsc'));
