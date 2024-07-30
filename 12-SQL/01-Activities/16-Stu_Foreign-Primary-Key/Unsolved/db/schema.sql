@@ -4,18 +4,18 @@ CREATE DATABASE orders_db;
 
 \c orders_db;
 
-CREATE TABLE instructors (
+CREATE TABLE customers (
   id SERIAL PRIMARY KEY,
   first_name VARCHAR(30),
   last_name VARCHAR(30)
 );
 
-CREATE TABLE courses (
+CREATE TABLE customer_orders (
   id SERIAL PRIMARY KEY,
   course_title VARCHAR(30) NOT NULL,
-  instructor_id INTEGER,
+  customer_id INTEGER,
   course_description TEXT,
-  FOREIGN KEY (instructor_id)
-  REFERENCES instructors(id)
+  FOREIGN KEY (customer_id)
+  REFERENCES customer(id)
   ON DELETE SET NULL
 );
