@@ -10,3 +10,5 @@ CREATE TABLE favorite_books (
   in_stock BOOLEAN,
   quantity INTEGER NOT NULL
 );
+
+\i seeds.sql;
