@@ -14,7 +14,7 @@ app.get('/home', (req, res) =>
 );
 
 // Serve the cat image
-app.get('/image', (req, res) =>
+app.get('/image/cat.jpg', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/images/cat.jpg'))
 );
 
