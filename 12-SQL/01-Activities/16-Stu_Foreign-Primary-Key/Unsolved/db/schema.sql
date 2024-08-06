@@ -1,4 +1,6 @@
 -- Write your Schema Here -- 
+<<<<<<< HEAD
+=======
 DROP DATABASE IF EXISTS orders_db;
 CREATE DATABASE orders_db;
 
@@ -19,3 +21,4 @@ CREATE TABLE customer_orders (
   REFERENCES customer(id)
   ON DELETE SET NULL
 );
+>>>>>>> 735f489c56e8d2991438dfec117bd8760fb896d9
