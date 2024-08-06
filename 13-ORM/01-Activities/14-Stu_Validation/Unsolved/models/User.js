@@ -16,8 +16,9 @@ User.init(
     username: {
       type: DataTypes.STRING,
       validate: {
-      allowNull: false,
-      isAlphanumeric: true
+        allowNull: false,
+        isAlphanumeric: true,
+      },
     },
     email: {
       type: DataTypes.STRING,
@@ -32,6 +33,7 @@ User.init(
       validate: {
         allowNull: false,
         min: 8,
+      },
     },
   },
   {
@@ -39,7 +41,7 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: "user",
   }
 );
 
