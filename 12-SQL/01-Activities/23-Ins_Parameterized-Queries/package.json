@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "23-ins_prepared-statements": "file:",
     "express": "^4.17.1",
     "pg": "^8.11.3"
   }
